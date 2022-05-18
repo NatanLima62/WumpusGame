@@ -24,6 +24,7 @@ namespace Wumpus1_1
 
         static void DesenharTabuleiro(int dimensaoTabuleiro)
         {
+            int Pontuacao = 1000;
             string[,] tabuleiro = new string[dimensaoTabuleiro, dimensaoTabuleiro];
             int iPersonagem = NumeroAleatorio(dimensaoTabuleiro);
             int jPersonagem = NumeroAleatorio(dimensaoTabuleiro);
@@ -68,7 +69,6 @@ namespace Wumpus1_1
 
             void UpdateTabuleiro()
             {   
-                int Pontuacao = 1000;
                 Console.WriteLine("1 - Andar para esquerda");
                 Console.WriteLine("2 - Andar para cima");
                 Console.WriteLine("3 - Andar para direita");
